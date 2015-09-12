@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+    "name": "The Cart Thief",
+    "short_name": "Hermetic Bot",
+    "description": "Hermes has you covered for Eastbay, Finishline, Footaction, Adidas and Champs Sports.",
+    "version": "0.5",
+    "browser_action": {
+        "default_icon": "img/cartthieflogo.png",
+        "128": "128.png",
+        "default_popup": "popup.html",
+        "default_title": "The Cart Thief"
+    },
+    "background": {
+        "persistent": false,
+        "scripts": ["js/background.js"]
+    },
+    "content_scripts": [{
+        "js": ["js/eastbay.js"],
+        "matches": ["http://www.eastbay.com/*", "https://www.eastbay.com/*"]
+    }, {
+        "js": ["js/finishline.js"],
+        "matches": ["http://www.finishline.com/*", "https://www.finishline.com/*"]
+    }, {
+        "js": ["js/champs.js"],
+        "matches": ["http://www.champssports.com/*", "https://www.champssports.com/*"]
+    }, {
+        "js": ["js/footaction.js"],
+        "matches": ["http://www.footaction.com/*", "https://www.footaction.com/*"]
+    }, {
+        "js": ["js/adidas.js"],
+        "matches": ["http://www.adidas.com/*", "https://www.adidas.com/*"]
+    }, {
+        "js": ["js/hotoveli.js"],
+        "matches": ["http://hotoveli.com/*", "https://hotoveli.com/*"]
+    }],
+    "icons": {
+        "16": "img/cartthieflogo16.png",
+        "48": "img/cartthieflogo48.png",
+        "128": "img/cartthieflogo128.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+}

@@ -1,0 +1,32 @@
+body {
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+    width: 300px;
+    height: 200px;
+}
+section > div {
+    display: inline-block;
+    margin: 0 4px;
+}
+section > div > div {
+    background: rgb(237, 232, 232);
+    padding: 8px;
+    font-size: 1.2em;
+}
+section {
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+.headerCT {
+    background-color: rgb(231, 228, 228);!important;
+    color: white;
+    font-size: 20px;
+}
+.center {
+    text-align: center;
+}
+.launch {
+    margin-left: 88px;
+    border: 1px solid black!important;
+}
